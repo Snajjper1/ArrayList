@@ -2,16 +2,21 @@ package com.perscholas.training;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Vector;
 
-public class Main {
+public class ArrayLists {
 
     public static void main(String[] args) {
 
         // list1 can contain only certain type of Objects
-        ArrayList<String> list1 = new ArrayList<String>();  //specific data
+        java.util.ArrayList<String> list1 = new java.util.ArrayList<>();  //specific data
+
+        Vector<String> vector = new Vector();
+
+
 
         // list2 can contain any Objects
-        ArrayList list2 = new ArrayList();                  //any data
+        java.util.ArrayList list2 = new java.util.ArrayList();                  //any data
 
         // #1 Add data to list
         list1.add("Alice");          //index 0
@@ -41,7 +46,7 @@ public class Main {
         System.out.println("Element 2 from list2 is: " + el1);
 
         // #3 Replace element in the list
-        list1.set(2, "James");      //replace element with index 2 to "Fiona"
+        list1.set(2, "James");      //replace element with index 2 to "James"
         System.out.println(list1);
 
         // #4 Remove element from the list
